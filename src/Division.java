@@ -3,8 +3,8 @@ package src;
 public  class Division implements CalcAct{
     private String div;
 
-    public Division(String div) {
-        this.div = div;
+    public Division(double valueA, String act, double valueB) {
+        this.div = "/";
     }
 
     @Override

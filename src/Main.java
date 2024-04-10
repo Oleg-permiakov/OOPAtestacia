@@ -1,22 +1,22 @@
 package src;
 
-import java.util.Scanner;
 
 public class Main {
     
     public static void main (String[] args) {
         
-        System.out.println("Введите первое значение с разделением через точку");
-        Scanner scan = new Scanner(System.in);
-        double valueA = Double.parseDouble(scan.nextLine());
-        System.out.println("Введите действие");
-        String act = scan.nextLine();
-        System.out.println("Введите второе значение с разделением через точку");
-        double valueB = Double.parseDouble(scan.nextLine());
-        scan.close();
+        double valueA = 0;
+        String act = null;
+        double valueB = 0;
 
         Calculator resalt = new Calculator(new Addition(valueA, act, valueB));
         resalt.calcAct();
+        Calculator resalt1 = new Calculator(new Subtraction(valueA, act, valueB));
+        resalt1.calcAct();
+        Calculator resalt2 = new Calculator(new Division(valueA, act, valueB));
+        resalt2.calcAct();
+        Calculator resalt3 = new Calculator(new Multiplication(valueA, act, valueB));
+        resalt3.calcAct();
         
     }
     

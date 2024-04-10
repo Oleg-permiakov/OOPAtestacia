@@ -4,7 +4,7 @@ package src;
 public class Multiplication implements CalcAct {
     private String mult;
 
-    public Multiplication(String mult) {
+    public Multiplication(double valueA, String act, double valueB) {
         this.mult = "*";
     }
 

@@ -3,7 +3,7 @@ package src;
 public  class Subtraction implements CalcAct{
     private String minus;
     
-    public Subtraction(String minus) {
+    public Subtraction(double valueA, String act, double valueB) {
         this.minus = "-";
     }
     public String getMinus() {

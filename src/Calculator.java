@@ -8,7 +8,7 @@ public class Calculator {
     }
     
     public void calcAct(){
-        calculator.calcAct(28, "+", 32);
+        calculator.calcAct(32, "/", 5);
     }
  
 }
